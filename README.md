@@ -46,4 +46,6 @@ Hotkeys and cursor movement is controlled with Win32 API functions:
 Source code has more functionality than that (semi-full mouse_event support) because I like translating Win32 API. Most of it is not used.
 
 Besides the main window, anothe hidden window is used for catching hotkey presses, because WinForms has to recreate the window in order to hide it from taskbar and that changes hWnd.
-* 
+
+This program does not have a function to make it start with Windows. You'll have to do that yourself.  
+What I did is to create a system task that starts specified .exe at LogOn with elevated rights.
